@@ -7,7 +7,7 @@ export default function Values() {
 
     const leftValues = value.slice(0,2).map(item=>{
         return (
-            <div className='flex md:flex-row-reverse items-center gap-7'> 
+            <div className='flex md:flex-row-reverse items-center gap-7' key={item.id}> 
                <div>
                    <span className=' flex justify-center text-3xl text-white items-center bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full'>{item.icon}</span>
                </div>
@@ -20,7 +20,7 @@ export default function Values() {
     })
     const rightValues = value.slice(2).map(item=>{
        return (
-            <div className='flex items-center gap-7'> 
+            <div className='flex items-center gap-7' key={item.id}> 
                <div>
                    <span className=' flex justify-center text-3xl text-white items-center bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full'>{item.icon}</span>
                </div>
